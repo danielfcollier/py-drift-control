@@ -67,7 +67,7 @@ make install
 
 ## 🎮 The "Drift" Demo
 
-To demonstrate the system's self-healing capabilities, we use a **dual-terminal** setup.
+To demonstrate the system's self-healing capabilities, it's used a **dual-terminal** setup.
 
 ### 1. Start the Controller
 
@@ -95,7 +95,7 @@ make attack
 
 #### Scenario B: Resource Contention (Robustness)
 
-We simulate a "Port Conflict" where a rogue process steals the primary port (8080).
+Simulate a "Port Conflict" where a rogue process steals the primary port (8080).
 
 ```bash
 make conflict
@@ -114,16 +114,16 @@ A modular Python structure separating the domain model from the control logic.
 
 ```text
 drift-control/
-├── Makefile             # Orchestration & Quality Checks
-├── pyproject.toml       # Dependency Management (uv/Ruff)
-├── desired_state.yaml   # The Setpoint (Configuration)
+├── Makefile              # Orchestration & Quality Checks
+├── pyproject.toml        # Dependency Management (uv/Ruff)
+├── desired_state.yaml    # The Setpoint (Configuration)
 └── src/
-    ├── chaos_monkey.py  # Fault Injection Tool
+    ├── chaos_monkey.py   # Fault Injection Tool
     └── drift_control/
-        ├── main.py      # The Control Loop (Daemon)
-        ├── models.py    # Pydantic Schema (Validation)
+        ├── main.py       # The Control Loop (Daemon)
+        ├── models.py     # Pydantic Schema (Validation)
         └── reconciler.py # Sensor, Comparator, & Actuator Logic
-
+        └── settings.py   # App Settings 
 ```
 
 ## 🧪 Engineering Standards

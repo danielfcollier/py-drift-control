@@ -6,7 +6,11 @@ from docker.errors import APIError, NotFound
 from rich.console import Console
 from rich.panel import Panel
 
+from drift_control.settings import get_settings
+
 console = Console()
+
+settings = get_settings()
 
 
 class ChaosMonkey:
@@ -18,8 +22,8 @@ class ChaosMonkey:
     def __init__(self, target_name: str = "critical-service"):
         self.target_name = target_name
         self.client = docker.from_env()
-        self.rogue_image = "httpd:alpine"
-        self.rogue_port = 8080
+        self.rogue_image = settings.ROGUE_IMAGE
+        self.rogue_port = settings.ROGUE_PORT
 
     def _get_container(self):
         try:
