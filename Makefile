@@ -4,7 +4,7 @@
 
 # Variables
 PYTHON := uv run python
-APP_MODULE := src.drift_control.main
+APP_MODULE := src.drift_control.daemon
 CHAOS_SCRIPT := src/chaos_monkey.py
 VENV := .venv
 
