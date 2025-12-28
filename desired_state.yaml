@@ -1,0 +1,6 @@
+app_name: "critical-service"
+image: "nginx:latest"
+status: "running"
+host_port: 8080
+fallback_host_port: 8081
+container_port: 80

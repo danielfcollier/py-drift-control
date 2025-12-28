@@ -1,0 +1,48 @@
+[project]
+name = "drift-control"
+version = "0.1.0"
+description = "A Control Theory based self-healing infrastructure agent."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "docker>=7.0.0",
+    "pydantic>=2.0.0",
+    "pyyaml>=6.0",
+    "rich>=13.0.0",
+]
+
+[dependency-groups]
+dev = [
+    "ruff",
+    "mypy",
+    "pytest",
+    "types-pyyaml",
+]
+
+[tool.ruff]
+line-length = 120
+target-version = "py313"
+exclude = [
+    ".venv",
+    ".git",
+    "__pycache__",
+    ".github",
+]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "C90", "UP"]
+
+[tool.ruff.lint.mccabe]
+max-complexity = 30
+
+[tool.ruff.lint.isort]
+combine-as-imports = true
+
+[tool.ruff.format]
+quote-style = "double"
+
+[tool.mypy]
+plugins = ['pydantic.mypy']
+ignore_missing_imports = true
+check_untyped_defs = true
+namespace_packages = true
