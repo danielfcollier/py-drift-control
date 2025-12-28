@@ -1,4 +1,4 @@
-# Container Drift Control: Self-Healing Infrastructure Agent
+# Drift Control: Self-Healing Infrastructure Agent
 
 > **"Infrastructure as Code defines the desired state. Control Theory enforces it."**
 
