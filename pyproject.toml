@@ -1,5 +1,5 @@
 [project]
-name = "container-drift-control"
+name = "drift-control"
 version = "0.1.0"
 description = "A Control Theory based self-healing infrastructure agent."
 readme = "README.md"

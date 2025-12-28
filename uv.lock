@@ -101,7 +101,7 @@ wheels = [
 ]
 
 [[package]]
-name = "container-drift-control"
+name = "drift-control"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
