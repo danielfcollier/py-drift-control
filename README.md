@@ -2,7 +2,7 @@
 
 > **"Infrastructure as Code defines the desired state. Control Theory enforces it."**
 
-**Container Drift Control** is a Proof-of-Concept (POC) illustrating how **Cybernetics** and **Control Theory** principles form the backbone of modern reliability engineering.
+**Drift Control** is a Proof-of-Concept (POC) illustrating how **Cybernetics** and **Control Theory** principles form the backbone of modern reliability engineering.
 
 It implements a continuous **Reconciliation Loop** (or Feedback Controller) that autonomously detects and corrects entropy (drift) in a system without human intervention. This is the fundamental pattern behind Kubernetes Controllers, Terraform, and other declarative systems.
 
